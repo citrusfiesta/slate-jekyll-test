@@ -1,0 +1,13 @@
+---
+layout: page
+title: citrusfiesta
+---
+
+<dl class="posts">
+  {% for post in site.posts %}
+  <dt><a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+  <p class="dateline">&#8211 {{ post.date | date: "%b %-d, %Y" }}</p>
+  </dt>
+  <dd>{{ post.excerpt }}</dd><br/>
+  {% endfor %}
+</dl>
